@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>API</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="keyword1,keyword2,keyword3">
+		<meta name="description" content="this is my page">
+		<meta name="content-type" content="text/html; charset=UTF-8">
+
+		<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+	</head>
+
+	<body>
+		 <form action="/servlet/UploadShipServlet" method="post" enctype="multipart/form-data"> 
+                   文件:<input type="file" name="file"><br />
+                   <input type="submit" value="上传">
+         </form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/sisNameExit" method="post">
+			输入姓名查询用户是否存在：<input type="text" name="name">
+			<input type="submit" value="查询">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/sgetAllUserInfo" method="post">
+			获取所有用户信息：
+			<input type="submit" value="确定">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/sgetUserInfoById" method="post">
+			查询指定ID用户信息：<input type="text" name="userid">
+			<input type="submit" value="查询">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/sgetUserIdByName" method="post">
+			输入姓名查询用户ID：<input type="text" name="name">
+			<input type="submit" value="查询">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/smodifyUserById" method="post">
+			修改指定用户信息-->用户id：<input type="text" name="userid"> 新的用户信息：
+			<input type="text" name="newuserinfo">
+			<input type="submit" value="修改">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/sdeleteUser" method="post">
+			删除ID对应的用户信息：<input type="text" name="userid">
+			<input type="submit" value="删除">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/saddUser" method="post">
+			添加用户-->新的用户信息：<input type="text" name="newuserinfo">
+			<input type="submit" value="添加">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/sgetAllFileDataByUserId" method="post">
+			获取指定ID用户波形文件信息：<input type="text" name="userid">
+			<input type="submit" value="查询">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/sdeleteFile" method="post">
+			删除ID对应的波形信息：<input type="text" name="fileid">
+			<input type="submit" value="删除">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/saddFile" method="post">
+			添加波形文件-->新的波形文件信息：<input type="text" name="newfileinfo">
+			<input type="submit" value="添加">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/sgetAllYangbenWaveDataByUserId" method="post">
+			获取指定ID用户样本文件信息：<input type="text" name="userid">
+			<input type="submit" value="查询">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+			<form action="/servlet/sdeleteYangbenWave" method="post">
+			删除ID对应的样本波形信息：<input type="text" name="yangbenid">
+			<input type="submit" value="删除">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/saddYangbenWave" method="post">
+			添加样本波形文件-->新的样本波形文件信息：<input type="text" name="newyangbeninfo">
+			<input type="submit" value="添加">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+			<form action="/servlet/sRecognize" method="post">
+			识别人工选择数据：<input type="text" name="data">
+			<input type="submit" value="识别">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+		<form action="/servlet/sRecognizeRaw" method="post">
+			识别原始数据：<input type="text" name="data">
+			<input type="submit" value="识别">
+		</form>
+		<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#987cb9 SIZE=10>
+	</body>
+
+</html>

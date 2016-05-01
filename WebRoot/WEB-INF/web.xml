@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ECGServeltService</display-name>
+  <servlet>
+    <description>检测用户名是否存在</description>
+    <display-name>检测用户名是否存在</display-name>
+    <servlet-name>sisNameExit</servlet-name>
+    <servlet-class>servelt.sisNameExit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>获取所有用户信息</description>
+    <display-name>获取所有用户信息</display-name>
+    <servlet-name>sgetAllUserInfo</servlet-name>
+    <servlet-class>servelt.sgetAllUserInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>获取指定ID用户信息</description>
+    <display-name>获取指定ID用户信息</display-name>
+    <servlet-name>sgetUserInfoById</servlet-name>
+    <servlet-class>servelt.sgetUserInfoById</servlet-class>
+  </servlet>
+  <servlet>
+    <description>获取用户姓名对应的id</description>
+    <display-name>获取用户姓名对应的id</display-name>
+    <servlet-name>sgetUserIdByName</servlet-name>
+    <servlet-class>servelt.sgetUserIdByName</servlet-class>
+  </servlet>
+  <servlet>
+    <description>修改id对应的用户信息</description>
+    <display-name>修改id对应的用户信息</display-name>
+    <servlet-name>smodifyUserById</servlet-name>
+    <servlet-class>servelt.smodifyUserById</servlet-class>
+  </servlet>
+  <servlet>
+    <description>删除id对应的用户信息</description>
+    <display-name>删除id对应的用户信息</display-name>
+    <servlet-name>sdeleteUser</servlet-name>
+    <servlet-class>servelt.sdeleteUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>添加用户</description>
+    <display-name>添加用户</display-name>
+    <servlet-name>saddUser</servlet-name>
+    <servlet-class>servelt.saddUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>获取指定ID用户所有的波形采集信息</description>
+    <display-name>获取指定ID用户所有的波形采集信息</display-name>
+    <servlet-name>sgetAllFileDataByUserId</servlet-name>
+    <servlet-class>servelt.sgetAllFileDataByUserId</servlet-class>
+  </servlet>
+  <servlet>
+    <description>删除波形信息</description>
+    <display-name>删除波形信息</display-name>
+    <servlet-name>sdeleteFile</servlet-name>
+    <servlet-class>servelt.sdeleteFile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>添加波形信息</description>
+    <display-name>添加波形信息</display-name>
+    <servlet-name>saddFile</servlet-name>
+    <servlet-class>servelt.saddFile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>获取指定ID用户的所有波形信息</description>
+    <display-name>获取指定ID用户的所有波形信息</display-name>
+    <servlet-name>sgetAllYangbenWaveDataByUserId</servlet-name>
+    <servlet-class>servelt.sgetAllYangbenWaveDataByUserId</servlet-class>
+  </servlet>
+  <servlet>
+    <description>删除样本波形信息</description>
+    <display-name>删除样本波形信息</display-name>
+    <servlet-name>sdeleteYangbenWave</servlet-name>
+    <servlet-class>servelt.sdeleteYangbenWave</servlet-class>
+  </servlet>
+  <servlet>
+    <description>添加样本波形信息</description>
+    <display-name>添加样本波形信息</display-name>
+    <servlet-name>saddYangbenWave</servlet-name>
+    <servlet-class>servelt.saddYangbenWave</servlet-class>
+  </servlet>
+  <servlet>
+    <description>识别波形</description>
+    <display-name>识别波形</display-name>
+    <servlet-name>sRecognize</servlet-name>
+    <servlet-class>servelt.sRecognize</servlet-class>
+  </servlet>
+  <servlet>
+    <description>识别波形</description>
+    <display-name>识别波形</display-name>
+    <servlet-name>sRecognizeRaw</servlet-name>
+    <servlet-class>servelt.sRecognizeRaw</servlet-class>
+  </servlet>
+  <servlet>
+    <description>上传图片</description>
+    <display-name>上传图片</display-name>
+    <servlet-name>UploadShipServlet</servlet-name>
+    <servlet-class>servelt.UploadShipServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>sisNameExit</servlet-name>
+    <url-pattern>/servlet/sisNameExit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sgetAllUserInfo</servlet-name>
+    <url-pattern>/servlet/sgetAllUserInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sgetUserInfoById</servlet-name>
+    <url-pattern>/servlet/sgetUserInfoById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sgetUserIdByName</servlet-name>
+    <url-pattern>/servlet/sgetUserIdByName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>smodifyUserById</servlet-name>
+    <url-pattern>/servlet/smodifyUserById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sdeleteUser</servlet-name>
+    <url-pattern>/servlet/sdeleteUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>saddUser</servlet-name>
+    <url-pattern>/servlet/saddUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sgetAllFileDataByUserId</servlet-name>
+    <url-pattern>/servlet/sgetAllFileDataByUserId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sdeleteFile</servlet-name>
+    <url-pattern>/servlet/sdeleteFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>saddFile</servlet-name>
+    <url-pattern>/servlet/saddFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sgetAllYangbenWaveDataByUserId</servlet-name>
+    <url-pattern>/servlet/sgetAllYangbenWaveDataByUserId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sdeleteYangbenWave</servlet-name>
+    <url-pattern>/servlet/sdeleteYangbenWave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>saddYangbenWave</servlet-name>
+    <url-pattern>/servlet/saddYangbenWave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sRecognize</servlet-name>
+    <url-pattern>/servlet/sRecognize</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sRecognizeRaw</servlet-name>
+    <url-pattern>/servlet/sRecognizeRaw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadShipServlet</servlet-name>
+    <url-pattern>/servlet/UploadShipServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
